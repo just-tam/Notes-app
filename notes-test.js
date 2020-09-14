@@ -17,5 +17,6 @@ function canReturnATextNoteWithHtml() {
     var noteslist = new NotesListView();
     var text = "I'm testing with Javascript!"
     noteslist.notesList.addNote(text);
-    assert.isTrue(noteslist.viewNotesList() === "<ul><li><div>I'm testing with Javascript!</div></li></ul>")
+    noteslist.viewNotesList()
+    assert.isTrue(noteslist.viewNotesList()[0] === "<ul><li><div>I'm testing with Javascript!</div></li></ul>")
 }
