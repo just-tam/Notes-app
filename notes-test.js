@@ -20,3 +20,9 @@ function canReturnATextNoteWithHtml() {
     noteslist.viewNotesList()
     assert.isTrue(noteslist.viewNotesList()[0] === "<ul><li><div>I'm testing with Javascript!</div></li></ul>")
 }
+
+function runtests() {
+    textCanBePushedIntoNotes()
+    canReturnATextNote()
+    canReturnATextNoteWithHtml()
+}
